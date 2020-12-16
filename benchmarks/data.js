@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1608090700134,
+  "lastUpdate": 1608090776997,
   "repoUrl": "https://github.com/adamantike/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.5 - core": [
@@ -118,6 +118,46 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.0000019713832271542876",
             "extra": "mean: 56.59306177019151 usec\nrounds: 6767"
+          }
+        ]
+      }
+    ],
+    "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
+      {
+        "commit": {
+          "author": {
+            "email": "aboten@lightstep.com",
+            "name": "alrex",
+            "username": "codeboten"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "001163739d7cc09a26592b688f9880da02baf208",
+          "message": "Remove SDK dependency from auto-instrumentation (#1420)",
+          "timestamp": "2020-12-14T15:03:25-08:00",
+          "tree_id": "3a2c11fff71c03c32ec35d12b2a7e3336dd0c7f9",
+          "url": "https://github.com/adamantike/opentelemetry-python/commit/001163739d7cc09a26592b688f9880da02baf208"
+        },
+        "date": 1608090774481,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_span",
+            "value": 28369.836425035224,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0000018500915479370622",
+            "extra": "mean: 35.24870517468126 usec\nrounds: 4155"
+          },
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_as_current_span",
+            "value": 21492.187569106034,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000003260036745114588",
+            "extra": "mean: 46.528534928545426 usec\nrounds: 8231"
           }
         ]
       }

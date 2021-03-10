@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1615404186475,
+  "lastUpdate": 1615404199136,
   "repoUrl": "https://github.com/adamantike/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.5 - core": [
@@ -358,6 +358,46 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.000051658137096565565",
             "extra": "mean: 10.208470741048355 usec\nrounds: 45046"
+          }
+        ]
+      }
+    ],
+    "OpenTelemetry Python Benchmarks - Python 3.5 - exporter": [
+      {
+        "commit": {
+          "author": {
+            "email": "lechen@microsoft.com",
+            "name": "Leighton Chen",
+            "username": "lzchen"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "c81fd5e19ee91ecbed2e3d09804cc1137704d419",
+          "message": "Hide certain implementation specific classes/variables (#1684)",
+          "timestamp": "2021-03-10T10:32:30-08:00",
+          "tree_id": "566d48dffc438f2518d95b4eb2fd647fdef31dc7",
+          "url": "https://github.com/adamantike/opentelemetry-python/commit/c81fd5e19ee91ecbed2e3d09804cc1137704d419"
+        },
+        "date": 1615404198201,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "exporter/opentelemetry-exporter-otlp/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_simple_span_processor",
+            "value": 2207.805314846332,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000012982077855502344",
+            "extra": "mean: 452.93848749956567 usec\nrounds: 80"
+          },
+          {
+            "name": "exporter/opentelemetry-exporter-otlp/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_batch_span_processor",
+            "value": 2870.5774052026645,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0009764046305173293",
+            "extra": "mean: 348.361970029998 usec\nrounds: 4004"
           }
         ]
       }

@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1625602278778,
+  "lastUpdate": 1625602282456,
   "repoUrl": "https://github.com/adamantike/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.5 - core": [
@@ -1772,6 +1772,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.0011012761703541466",
             "extra": "mean: 420.573940955628 usec\nrounds: 3726"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "srikanth.chekuri92@gmail.com",
+            "name": "Srikanth Chekuri",
+            "username": "lonewolf3739"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "0e126544fba25c0f937a09e7c8cfbc7b6e6e518a",
+          "message": "Use BatchSpanProcessor in examples (#1928)",
+          "timestamp": "2021-07-01T15:53:17-07:00",
+          "tree_id": "3cabfd767322315ea28189e45206a005b19a0585",
+          "url": "https://github.com/adamantike/opentelemetry-python/commit/0e126544fba25c0f937a09e7c8cfbc7b6e6e518a"
+        },
+        "date": 1625602281072,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "exporter/opentelemetry-exporter-otlp-proto-grpc/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_simple_span_processor",
+            "value": 1757.3764738497775,
+            "unit": "iter/sec",
+            "range": "stddev: 0.00009411214833018975",
+            "extra": "mean: 569.0300370354686 usec\nrounds: 27"
+          },
+          {
+            "name": "exporter/opentelemetry-exporter-otlp-proto-grpc/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_batch_span_processor",
+            "value": 2351.3024342350877,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0011108069892745683",
+            "extra": "mean: 425.2962041122176 usec\nrounds: 3988"
           }
         ]
       }

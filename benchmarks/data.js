@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1625602347505,
+  "lastUpdate": 1625602376614,
   "repoUrl": "https://github.com/adamantike/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.5 - core": [
@@ -2388,6 +2388,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 8.976763499770901e-7",
             "extra": "mean: 1.3404052184452446 usec\nrounds: 95239"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "srikanth.chekuri92@gmail.com",
+            "name": "Srikanth Chekuri",
+            "username": "lonewolf3739"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "0e126544fba25c0f937a09e7c8cfbc7b6e6e518a",
+          "message": "Use BatchSpanProcessor in examples (#1928)",
+          "timestamp": "2021-07-01T15:53:17-07:00",
+          "tree_id": "3cabfd767322315ea28189e45206a005b19a0585",
+          "url": "https://github.com/adamantike/opentelemetry-python/commit/0e126544fba25c0f937a09e7c8cfbc7b6e6e518a"
+        },
+        "date": 1625602375655,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_extract_single_header",
+            "value": 701111.4944400142,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0000021475549732615087",
+            "extra": "mean: 1.4263066686685935 usec\nrounds: 80001"
+          },
+          {
+            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_inject_empty_context",
+            "value": 1091081.363447031,
+            "unit": "iter/sec",
+            "range": "stddev: 2.458702028135879e-7",
+            "extra": "mean: 916.5219327371598 nsec\nrounds: 120482"
           }
         ]
       }
